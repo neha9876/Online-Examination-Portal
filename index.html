@@ -1,0 +1,135 @@
+<html>
+    <head>
+<title>home</title>
+
+    <style>
+
+setInterval(blinker, 1000);
+.mySlides {display:none;}
+<!--
+.style1 {font-size: 45px}
+.style2 {font-size: 12pt; }
+-->
+p.stylek{color:slategray;
+font-family:calibri;
+}
+.dropbtn {
+    background-color:slategray;
+    color:white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+	font-stretch:condensed;	
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color:cornsilk;
+    min-width: 70px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+	font-size:16px;
+}
+p.c{align:justify;
+font-family:calibre;
+color:maroon;}
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color:bisque}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: bisque;
+}
+
+    .style4 {
+	font-size: 18px;
+	font-weight: bold;
+}
+    </style>
+    </head>  
+    <body  bgcolor=cornsilk>   
+ 
+       <div style="positon:absolute; align=left; top:0px; left:2px;">
+         <img src=images/on.jpg height=34% width=100% border=3></div>
+
+          <div style="height:50px;width:100%;align-items:center;font-size:40pt;position:relative; top:2px;align-content:center;background-color:#CCCCCC" >
+	   <div style="width:80px; height:30px; left:45px; top:5px; position:absolute; " class="dropdown"> <button class="dropbtn" >Candidate</button>
+	       <div class="dropdown-content" >
+		     <a href="candidate_reg.php"> New Registration </a> 
+			 <a href="cnd_login.php" > Already Registered Candidate</a>
+		   </div> 
+		 </div> 
+		 <div style="width:80px; left:130px; top:5px; position:absolute;" class="dropdown"> <button class="dropbtn" >Admin</button>
+	       <div class="dropdown-content">
+		     <a href="admin_login.html"> Login </a> 
+		
+		   </div> 
+		 </div> 
+	   </div>
+     
+
+
+<div class="w3-content w3-section" style="position:absolute;  top:290px; align:right;right:0px; ">
+ 
+<img class="mySlides" src="images/8.jpg" style="width:500px" height=420px border=1>
+  <img class="mySlides" src="images/7.jpg" style="width:500px" height=420px border=1>
+  <img class="mySlides" src="images/lg.jpg" style="width:500px" height=420px border=1>
+</div></div>
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+    var i;
+    var x = document.getElementsByClassName("mySlides");
+    for (i = 0; i < x.length; i++) {
+       x[i].style.display = "none";  
+    }
+    myIndex++;
+    if (myIndex > x.length) {myIndex = 1}    
+    x[myIndex-1].style.display = "block";  
+    setTimeout(carousel, 2000); // Change image every 2 seconds
+}
+
+
+</script> 
+	
+<div style="position:absolute; align:left; left:70px;top:330px;"> <h1><p class="stylek" onmouseover="style.color='red'" onmouseout="style.color='grey'">WELCOME TO ONLINE EXAM</p></h1></div>
+<div style="position:absolute; align:left; left:40px; top:440px;">
+<table  width=50%>
+<colgroup span="2" align="justify"></colgroup>
+<tr>
+<td ><div class="marquee-wrapper"><marquee direction=up behaviour="infinite" scrollamount="3" onmouseover="this.stop();" onmouseout="this.start();">  <h4><p class=c>
+<h3><center><p class=c>Online Examination</p></center></h3> 
+<br><h2>Online examination is conducting a test online to measure the knowledge of the participants on a given topic. 
+In the olden days everybody had to gather in a classroom at the same time to take an exam. 
+With online examination students can do the exam online, in their own time and with their own device, regardless where they life. 
+You online need a browser and internet connection. </h2></br>
+<br><h3><center><p class=c>THANK YOU</center><h3></p></h4></marquee></div>
+</td>
+</tr>
+</table>
+</div>
+       
+
+
+
+</body>
+</html>
+ 
